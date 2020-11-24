@@ -10,7 +10,7 @@ const fixturesPath = path.resolve(__dirname, "./fixtures");
 function createPlugin(name, processor) {
   const plugin = () => ({
     postcssPlugin: name,
-    Once: processor
+    Root: processor
   })
   plugin.postcss = true
   return plugin
